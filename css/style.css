@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial, sans-serif';
+
+}
+
+span{color: rgb(173, 192, 65);}
+
+.bienvenido{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.bienvenido  h3{
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+#carouselExampleIndicators {
+    width: 40%; 
+    margin: 3% auto 10% auto; 
+}
+
+.carousel-inner img {
+    width: 1000px; 
+    height: 500px;  
+}
+
+
+
+/*servicios*/
+.servicios {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.servicios div {
+    background-color: #afabab;
+    width: 30%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.servicios div img {
+    width: 20%;
+}
+
+.servicios div h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.servicios div p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-widht:500px){
+
+    .servicios div{
+        background-color: blueviolet;
+
+    }
+}
+
+
+
+
+
+
+
+/*contacto*/
+
+.comunicarse p{text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 3% auto;
+    width: 50%;
+}
+.formulario {
+    width: 30%;
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5% auto;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+
+.mapa {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+/*ofertas*/
+.ofertas {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.ofertas div {background-color: #afabab;
+    border-radius: 20px;
+    width: 35%;
+    padding: 30px;
+    margin: 3% auto;
+}
+.ofertas div h2{font-size: 30px;
+    font-weight:bold ;
+}
+.ofertas div p{font-size: 20px;}
+
+/*calzado*/ 
+.calzado{
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.namesection{text-align: center;
+    background-color: #bdb5b5;
+    font-size: 40px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+
+.calzado div img{
+      width: 300px;  
+      height: 300px;
+     background-color: #bebebe;
+     box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+}
+.calzado div h3{
+font-size: 20px;
+font-weight: bolder;
+text-decoration: underline;
+text-transform:uppercase ;
+margin: 5% auto 10% auto;
+}
+.calzado div h4{
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 3% auto 10% auto;
+    }
+.calzado div{
+    width: 350px;
+    height: 100%;
+    border: 2px solid black;
+    margin: 5%;
+    text-align: center;
+    padding: 20px;
+    background-color: #afabab;
+    box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+   
+    }
+
+    .botoncomprar {
+        background: black;
+        color: white;
+        text-decoration: none;
+        border-radius: 7px;
+        padding: 7px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+.grid-container{
+    margin:5% 0;
+    width: 100%;
+    border: solid 4px black;
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr;
+   /* grid-template-columns: 1fr 1fr 1fr 1fr;*/
+   grid-template-columns: repeat(4,1fr);
+   gap: 20px;
+}
+.grid-container div img{
+    width: 70%;
+    height: 100%;    
+}
+.grid-items{
+    border: solid 2px black;
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+    box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+}
+
+
+/*footer*/
+footer {
+    background-color: #726e6e;
+    color: #fff;
+    text-align: center;
+
+}
+
+.pie{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 3%;
+
+}
+
+.pie:hover{
+    background-color:  #ffffff;
+}
+
+.footerP{
+font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
