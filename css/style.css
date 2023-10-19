@@ -142,12 +142,18 @@ input[type="reset"] {
 .ofertas div p{font-size: 20px;}
 
 /*calzado*/ 
-.calzado{
+.calzadonike{
 display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.calzadopuma{
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 .namesection{text-align: center;
     background-color: #bdb5b5;
     font-size: 40px;
@@ -164,28 +170,55 @@ display: flex;
 -webkit-box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
 }
-.puma{
-   width:100%;
-   height: 100%;
-   background-color: #bebebe;
-   box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
-}
-.calzado div h3{
+
+.calzadonike div h3{
 font-size: 20px;
 font-weight: bolder;
 text-decoration: underline;
 text-transform:uppercase ;
 margin: 5% auto 10% auto;
 }
-.calzado div h4{
+.calzadonike div h4{
     font-size: 15px;
     font-weight: bolder;
     margin: 3% auto 10% auto;
     }
-.calzado div{
+.calzadonike div{
     width: 350px;
+    height: 100%;
+    border: 2px solid black;
+    margin: 5%;
+    text-align: center;
+    padding: 20px;
+    background-color: #afabab;
+    box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+   
+ }
+ 
+ .puma{
+    width:100%;
+    height: 220px;
+    background-color: #bebebe;
+    box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+ -webkit-box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+ -moz-box-shadow: 10px 10px 44px -19px rgba(0,0,0,0.75);
+ }
+    .calzadopuma div h3{
+font-size: 20px;
+font-weight: bolder;
+text-decoration: underline;
+text-transform:uppercase ;
+margin: 7% auto 10% auto;
+}
+.calzadopuma div h4{
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 0 auto 10% auto;
+    }
+.calzadopuma div{
+    width: 400px;
     height: 100%;
     border: 2px solid black;
     margin: 5%;
@@ -198,7 +231,16 @@ margin: 5% auto 10% auto;
    
     }
 
-    .botoncomprar {
+    .botoncomprarnike {
+        background: black;
+        color: white;
+        text-decoration: none;
+        border-radius: 7px;
+        padding: 7px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .botoncomprarpuma{
         background: black;
         color: white;
         text-decoration: none;
@@ -253,6 +295,13 @@ footer {
 font-size: 20px;
 }
 
+
+@media screen and (max-width: 850px) {
+
+        .botoncomprarnike {
+            font-size: 14px;
+        }
+}
 @media screen and (max-width: 1000px) {
     .pie {
         width: 5%; 
@@ -260,6 +309,36 @@ font-size: 20px;
 
     .footerP {
         font-size: 20px;
+    }
+    .calzadonike div{
+        width: 300px;
+        height: 500px;
+}
+.nike{
+    width: 250px;  
+    height: 300px;
+}
+.calzadonike div h3{
+    font-size: 15px;
+    }
+    .puma{
+        width:90%;
+     }
+        .calzadopuma div h3{
+    font-size: 15px;
+    margin: 5% auto 7% auto;
+    }
+    .calzadopuma div{
+        width: 300px;
+     }
+     .botoncomprarpuma{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .namesection{
+        font-size: 30px;
     }
 }
 
@@ -275,6 +354,16 @@ font-size: 20px;
     .bienvenido{
         margin-bottom: 30px;
     }
+    .calzadopuma div h3{
+        font-size: 17px;
+        }
+        .calzadopuma div h4{
+            margin: 0 auto 6% auto;
+            }
+         .botoncomprarpuma{
+            padding: 5px;
+            font-size: 12px;
+        }
 
 }
 
@@ -282,13 +371,32 @@ font-size: 20px;
     .pie {
         width: 8%; 
     }
+
+    .calzadonike div{
+        width: 250px;
+        height: 400px;
+}
+.nike{
+    width: 200px;  
+    height: 250px;
+}
+
+
 }
 
 
 @media screen and (max-width: 350px) {
     .pie {
         width: 10%; 
-    }   
+    } 
+    .puma{
+        width:100%;
+        height: 200px;
+     }
+     .grid-container div img{
+        width: 100%;
+        height: 100%; 
+}
 }
 @media screen and (max-width: 985px) {
 
@@ -302,19 +410,28 @@ font-size: 20px;
         font-weight: bold;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 1100px) {
+    .grid-container{
+        grid-auto-rows: 1fr 1fr 1fr 1fr;
+       grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width: 800px) {
+    .grid-container{
+        grid-auto-rows: auto;
+       grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 470px) {
+    .grid-container{
+        grid-auto-rows: auto;
+       grid-template-columns: 1fr;
+    }
+    .grid-container div img{
+        width: 50%;
+        height: 100%; 
+}
+}
 
 
 
