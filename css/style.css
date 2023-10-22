@@ -342,6 +342,20 @@ font-size: 20px;
 
     .carrusel{
         width: 70%;
+    }    
+    .comunicarse p{
+        font-size: 20px;
+        width: 60%;
+    }
+    .formulario {
+        width: 40%;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 7px 13px;
+    }
+    .preguntas{
+        width: 60%;
     }
     
 }
@@ -374,6 +388,7 @@ font-size: 20px;
             padding: 5px;
             font-size: 12px;
         }
+    }
         @media screen and (max-width: 700px) {
             .ofertas {
                 flex-direction: column;
@@ -384,9 +399,12 @@ font-size: 20px;
                 padding: 25px;
                 margin: 2% auto;
             }
+            .comunicarse p{
+                font-size: 18px;
+                width: 70%;
+            }
         }
 
-}
 
 @media screen and (max-width: 450px) {
     .pie {
@@ -447,6 +465,9 @@ font-size: 20px;
     .ofertas div h2{font-size: 22px;
     }
     .ofertas div p{font-size: 15px;}
+    .preguntas{
+        width: 70%;
+    }
 }
 @media screen and (max-width: 470px) {
     .grid-container{
@@ -477,6 +498,9 @@ font-size: 20px;
     .servicios div img {
         width: 35%;
     }
+    .formulario {
+        width: 60%;
+    }
 }
 @media screen and (max-width: 740px) {
     .servicios div {
@@ -491,6 +515,10 @@ font-size: 20px;
 }
 @media screen and (max-width: 550px) {
     .servicios div {width: 70%;}
+    .comunicarse p{
+        font-size: 15px;
+        width: 80%;
+    }
 }
 @media screen and (max-width: 750px) {
     .carrusel{
@@ -512,6 +540,12 @@ font-size: 20px;
         width: 600px; 
         height: 300px;  
     }
+    .formulario {
+        width: 90%;
+    }
+    .preguntas{
+        width: 85%;
+    }
 }
 @media screen and (max-width:340px) {
     .carrusel{
@@ -520,6 +554,9 @@ font-size: 20px;
     .carousel-inner img {
         width: 500px; 
         height: 250px;  
+    }
+    .preguntas{
+        width: 92%;
     }
 }
 
